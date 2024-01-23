@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentando a Programar sozinho</title>
+    <style>
+    div#area{
+        font: normal 20pt arial;
+        color:rgb(0,0, 0.5); 
+        background: #ff0000;
+        width: 300px;
+        height: 300px;
+        box-shadow: 0 0 15px 15px rgba(251, 6, 6, 0.5)
+    }
+    </style>
+</head>
+<body>
+    <div id="area" onclick="clicar()" onmouseenter="Entrar()" ondblclick="clicou2()" onmouseout="sair()" onmousedown="baixo()" onmouseover="sobre()" onmouseleave="saiu()"></div>
+    <script>
+        var l = window.document.getElementById('area')
+        var o = window.document.getElementById('area')
+
+        function Entrar() {
+            l.innerText ='A area está verde meu irmão??'
+            l.style.background = 'green'
+            l.style.boxShadow =Entrar
+            
+        }
+        function clicar() {
+            
+                l.innerText = 'Irmão por que você clicou? não faz isso novamente cara'
+               // l.innerText = 'CARAAAA.... PARA CARAA'
+            
+            
+
+        }
+       
+        function clicou2(){
+            l.innerText = 'CARA CLICAR 2X FAZ COM QUE DANIFIQUE MEU PROCESSADOR, POR FAVOU PARE... Vai embora dessa area mano!'
+            
+        }
+        function sair(){
+            l.innerText='Graças a Deus ele saiu!'
+        }
+    </script>
+</body>
+</html>
